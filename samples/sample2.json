@@ -1,0 +1,56 @@
+{
+    "stap_1_klantprofiel": {
+      "onderbouwing": "De klant vraagt direct naar de kosten, de rente van de financiering, de mogelijkheid tot belastingaftrek en reageert zeer positief op de beloofde besparing en BTW-teruggave.",
+      "profiel": "De Kostenbewuste Bespaarder"
+    },
+    "stap_2_expliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[0:10 - 0:16] Klopt, ja. Even een feestje weten, wat het kost ongeveer.",
+        "ubr": "Inzicht krijgen in de kosten van een thuisbatterij"
+      },
+      {
+        "onderbouwing_uit_transcript": "[1:53 - 1:57] En hoeveel rente zit er ook? Hoeveel rente is er? Weet je dat?",
+        "ubr": "Financieringsmogelijkheden en bijbehorende rentetarieven begrijpen"
+      },
+      {
+        "onderbouwing_uit_transcript": "[2:17 - 2:21] En is dat ook aftrekbaar van de belasting of zo, die rente, of dat niet?",
+        "ubr": "Maximale financiële voordelen behalen, inclusief belastingvoordelen"
+      },
+      {
+        "onderbouwing_uit_transcript": "[2:24 - 2:31] Oké. En kun je ook gewoon terugbetalen dan, of hoe werkt dat dan?",
+        "ubr": "Zekerheid over de terugbetalingsflexibiliteit van een lening"
+      },
+      {
+        "onderbouwing_uit_transcript": "[10:54 - 10:56] Oké, dat is perfect.",
+        "ubr": "Profiteren van financiële voordelen zoals BTW-teruggave en een negatieve energierekening"
+      }
+    ],
+    "stap_3_impliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[10:54 - 10:56] Oké, dat is perfect.",
+        "ubr": "Terugleverkosten vermijden en eigen zonnestroom optimaal benutten"
+      }
+    ],
+    "stap_4_aanbevolen_usps": [
+      {
+        "key": "USP_BATTERIJ_SLIMMEINVESTERING",
+        "onderbouwing_uit_transcript": "[0:10 - 0:16] Klopt, ja. Even een feestje weten, wat het kost ongeveer.",
+        "redenering": "Direct antwoord op de financiële vragen en de wens om te weten wat het kost en oplevert."
+      },
+      {
+        "key": "USP_SERVICE_BTWTERUGGAVE",
+        "onderbouwing_uit_transcript": "[10:54 - 10:56] Oké, dat is perfect.",
+        "redenering": "Adresseeert de expliciete positieve reactie op BTW-teruggave."
+      },
+      {
+        "key": "USP_BATTERIJ_TERUGLEVERKOSTEN",
+        "onderbouwing_uit_transcript": "[10:54 - 10:56] Oké, dat is perfect.",
+        "redenering": "Direct antwoord op de impliciete wens om terugleverkosten te vermijden."
+      },
+      {
+        "key": "USP_BATTERIJ_NULGEDOE",
+        "onderbouwing_uit_transcript": "[0:31 - 0:33] Nee, nog niet.",
+        "redenering": "Past bij de klant die nog geen onderzoek heeft gedaan en een 'nul gedoe' oplossing zoekt."
+      }
+    ]
+  }

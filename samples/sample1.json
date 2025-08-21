@@ -1,0 +1,60 @@
+{
+    "stap_1_klantprofiel": {
+      "onderbouwing": "De klant vergelijkt actief prijzen en aanbiedingen, en is geïnteresseerd in het 'handelen' om financieel voordeel te behalen.",
+      "profiel": "De Kostenbewuste Bespaarder"
+    },
+    "stap_2_expliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[0:04] Ik heb vandaag een folder in de bus gevonden over de thuisbatterij. Daar was ik net toevallig mee bezig om dat aan te schaffen.",
+        "ubr": "Actieve zoektocht naar een thuisbatterij"
+      },
+      {
+        "onderbouwing_uit_transcript": "[0:10] Ik ben wel gebonden aan bepaalde afmetingen. Dus maar ik zag dat een Lexus batterij 35 centimeter de diepte heeft. [...] Alleen inbouwdiepte is 30 centimeter.",
+        "ubr": "Behoefte aan specifieke afmetingen/inbouwruimte"
+      },
+      {
+        "onderbouwing_uit_transcript": "[1:39] Nou dat is wel concurrerend want ik stond net op het punt om ook een overzettende actie te testeren van Solshare. voor een Alpha ESS batterij. Dus misschien is het toch moederwaard om even een vergelijk te maken.",
+        "ubr": "Wens voor concurrerende prijs en vergelijking van aanbiedingen"
+      },
+      {
+        "onderbouwing_uit_transcript": "[2:05] Dus zijn deze te reizen all-in? Dus inclusief montage en dus ook dit soort afstanden van de acculocatie van de meterkast, of is dat ook niet nodig?",
+        "ubr": "Behoefte aan all-in prijs inclusief installatie en afstand"
+      },
+      {
+        "onderbouwing_uit_transcript": "[9:32] Om daar ook mee te gaan handelen dan.",
+        "ubr": "Wens om te 'handelen' met energie op de markt"
+      },
+      {
+        "onderbouwing_uit_transcript": "[12:06] Oké, ja, dat is wel nadeliger. Dat je meer verlies hebt door het twee keer omvormen, lijkt mij.",
+        "ubr": "Zorg over energieverliezen bij omvorming"
+      }
+    ],
+    "stap_3_impliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[5:16] Dat is allemaal al voorbereiding. De meterkast is net aangepast van 1 fase 35 naar 3 fase 25 ampère. In Nexus komt dat volgende week aansluiten. Dus ook dat is voorbereid.",
+        "ubr": "Voorbereiding op toekomstige energiemarkt en -kosten"
+      }
+    ],
+    "stap_4_aanbevolen_usps": [
+      {
+        "key": "USP_BATTERIJ_SLIMBESPAREN",
+        "onderbouwing_uit_transcript": "[10:15] Nadeeld, maar ook door in te kopen op omlandsmomenten, waar de stroomprijs dus heel laag of soms negatief is.",
+        "redenering": "Biedt oplossing voor het slim besparen op energiekosten door automatisch in- en verkopen."
+      },
+      {
+        "key": "USP_BATTERIJ_SLIMMEINVESTERING",
+        "onderbouwing_uit_transcript": "[1:39] Nou dat is wel concurrerend want ik stond net op het punt om ook een overzettende actie te testeren van Solshare. voor een Alpha ESS batterij. Dus misschien is het toch moederwaard om even een vergelijk te maken.",
+        "redenering": "Benadrukt het financiële voordeel en de terugverdientijd van de batterij."
+      },
+      {
+        "key": "USP_BATTERIJ_TOEKOMSTKLAAR",
+        "onderbouwing_uit_transcript": "[5:16] Dat is allemaal al voorbereiding. De meterkast is net aangepast van 1 fase 35 naar 3 fase 25 ampère. In Nexus komt dat volgende week aansluiten. Dus ook dat is voorbereid.",
+        "redenering": "Sluit aan bij de klant's voorbereidingen op toekomstige energiemarkten en regels."
+      },
+      {
+        "key": "USP_BATTERIJ_MEERRENDEMENT",
+        "onderbouwing_uit_transcript": "[12:06] Oké, ja, dat is wel nadeliger. Dat je meer verlies hebt door het twee keer omvormen, lijkt mij.",
+        "redenering": "Direct antwoord op de zorg over energieverliezen bij omvorming."
+      }
+    ]
+  }

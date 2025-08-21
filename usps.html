@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>USP's Weergave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="theme-offer">
+    <header class="zp-header">
+      <div class="zp-container">
+        <h1>USP's op maat</h1>
+        <p class="subtitle">Alleen de USP-sectie, in offerte-stijl</p>
+        <div class="control-bar">
+          <label for="dataset-select">Dataset</label>
+          <select id="dataset-select">
+            <option value="Structured_output.json">Root: Structured_output.json</option>
+            <option value="samples/sample1.json">Sample 1</option>
+            <option value="samples/sample2.json">Sample 2</option>
+            <option value="samples/sample3.json">Sample 3</option>
+          </select>
+          <div class="upload">
+            <label for="upload-json" class="btn">Upload JSON(s)</label>
+            <input id="upload-json" type="file" accept="application/json" multiple />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="zp-container">
+      <section id="usps">
+        <h2>Aanbevolen USP's</h2>
+        <div id="usp-container" class="usp-grid"></div>
+      </section>
+    </main>
+
+    <script src="./renderer.js" defer></script>
+  </body>
+</html>
+
+

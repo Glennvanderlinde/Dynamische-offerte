@@ -1,0 +1,261 @@
+:root {
+  --bg: #0b0f14;
+  --card: #111823;
+  --muted: #9db0c5;
+  --text: #e9f0f7;
+  --accent: #00aa65;
+  --border: #1d2633;
+}
+
+.theme-offer {
+  --bg: #f7f9fc;
+  --card: #ffffff;
+  --muted: #64748b;
+  --text: #0f172a;
+  --accent: #00aa65;
+  --border: #e6e9ef;
+}
+
+/* Offer layout */
+.offer-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 100vh;
+}
+
+.offer-sidebar {
+  border-right: 1px solid var(--border);
+  padding: 24px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.offer-sidebar .logo {
+  font-weight: 700;
+  color: var(--accent);
+  margin-bottom: 24px;
+}
+.offer-sidebar .steps {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+  display: grid;
+  gap: 10px;
+}
+.offer-sidebar .steps li.active { color: var(--text); font-weight: 600; }
+.offer-sidebar .steps li.done { color: var(--muted); }
+.offer-sidebar .contact { color: var(--muted); margin-top: auto; }
+.offer-sidebar .name { font-weight: 600; color: var(--text); }
+.offer-sidebar .phone { color: var(--text); }
+.offer-sidebar .avatar { width: 56px; height: 56px; border-radius: 50%; border: 1px solid var(--border); object-fit: cover; display: block; margin: 24px 0 8px 0; }
+
+.offer-main { padding: 24px; max-width: 1200px; margin: 0 auto; }
+.offer-header { display: grid; grid-template-columns: 1fr; gap: 8px; }
+.header-row { display:flex; align-items:center; justify-content: space-between; gap: 12px; }
+.meta-bar { display:flex; align-items:center; gap:10px; color: var(--muted); }
+.rating-badge { background:#eef7f2; color:#0a5c37; padding:2px 8px; border-radius:999px; font-weight:700; }
+.stars { color: #ffc107; letter-spacing: 2px; font-size: 14px; }
+.offer-body { display: grid; grid-template-columns: 720px 440px; grid-template-rows: auto auto; gap: 16px; align-items: start; }
+.offer-body .offer-visual { grid-row: 1 / span 2; grid-column: 1; }
+.offer-body .offer-card { grid-row: 1; grid-column: 2; }
+.offer-body .usp-card { grid-row: 2; grid-column: 2; }
+.offer-visual img { width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border); display: block; }
+.offer-visual { width: 720px; }
+.thumbs { display:flex; gap:12px; margin-top: 12px; }
+.thumbs img, .thumbs .thumb-placeholder { width: 96px; height: 72px; border-radius: 8px; border:1px solid var(--border); display:flex; align-items:center; justify-content:center; background: #fff; object-fit: cover; }
+.offer-smart { margin-top: 16px; padding: 16px; border-radius: 12px; }
+.offer-smart h3 { margin: 0 0 8px 0; }
+.specs-link { color: #0a5c37; text-decoration: underline; display:inline-block; margin-top:8px; }
+.product-title { margin: 0 0 12px 0; }
+.usp-card h3 { margin: 0 0 8px 0; }
+.usp-details .usp-block { border: 1px solid var(--border); background: var(--card); border-radius: 12px; padding: 12px; }
+.usp-details { display: grid; gap: 12px; }
+.offer-usp-list { margin: 0; padding: 0; list-style: none; }
+.offer-usp-list li { margin: 8px 0; padding-left: 24px; position: relative; }
+.offer-usp-list li::before { content: "\2714"; position: absolute; left: 0; top: 0; color: var(--accent); font-weight: 700; }
+.specs { margin-top: 12px; }
+.spec-list { margin: 0; padding-left: 22px; color: var(--muted); }
+.spec-list li { margin: 4px 0; }
+
+.usp-details { margin-top: 16px; display: grid; gap: 12px; }
+.usp-block { border: 1px solid var(--border); background: var(--card); border-radius: 10px; padding: 12px; }
+.usp-block .title { font-weight: 700; margin: 0 0 6px 0; }
+.usp-block .voordeel { margin: 0 0 4px 0; color: var(--text); }
+.usp-block .doorvertaling { margin: 0; color: var(--accent); font-weight: 700; }
+
+.offer-footer { display: flex; justify-content: flex-end; gap: 12px; margin-top: 24px; }
+.btn-primary { background: var(--accent); color: #042814; border: 0; padding: 10px 16px; border-radius: 10px; font-weight: 700; cursor: pointer; }
+.btn-outline { background: transparent; color: var(--text); border: 1px solid var(--border); padding: 10px 16px; border-radius: 10px; cursor: pointer; }
+.control-bar.small select { padding: 6px 8px; }
+
+/* Make dataset switcher always visible on the offer page */
+.theme-offer .control-bar.small {
+  position: fixed;
+  right: 24px;
+  top: 20px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  padding: 8px 10px;
+  z-index: 1000;
+}
+
+/* Card surface tuning for light theme */
+.card, .offer-card, .ai-offer-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+.zp-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.zp-header {
+  background: linear-gradient(180deg, #0d1420, #0b0f14);
+  border-bottom: 1px solid var(--border);
+}
+
+.zp-header h1 {
+  margin: 0 0 4px 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0;
+  color: var(--muted);
+}
+
+.control-bar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.control-bar label { font-size: 14px; color: var(--muted); }
+.control-bar select {
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.upload input[type="file"] { display: none; }
+.btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #052915;
+  border-radius: 8px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+h2 {
+  margin-top: 32px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 8px;
+}
+
+.usp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+@media (max-width: 768px) {
+  .usp-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.usp-card h3 {
+  margin-top: 0;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(0, 170, 101, 0.15);
+  color: var(--accent);
+  border: 1px solid rgba(0, 170, 101, 0.35);
+  padding: 2px 8px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.redenering {
+  color: var(--text);
+}
+
+.uitleg {
+  color: var(--muted);
+  margin: 8px 0 0 0;
+}
+
+.feit {
+  color: var(--text);
+  margin: 8px 0 0 0;
+}
+
+.doorvertaling {
+  color: var(--accent);
+  margin: 6px 0 0 0;
+  font-weight: 600;
+}
+
+blockquote.onderbouwing {
+  margin: 12px 0 0 0;
+  padding: 12px;
+  background: #0d1520;
+  border-left: 3px solid var(--accent);
+  color: var(--muted);
+}
+
+.muted { color: var(--muted); }
+
+.ubr-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.ubr-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.error {
+  background: #2a0b0b;
+  color: #ffdada;
+  border-bottom: 1px solid #5c1c1c;
+  padding: 12px 16px;
+}
+
+

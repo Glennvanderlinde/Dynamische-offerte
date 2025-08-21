@@ -1,0 +1,137 @@
+{
+    "name": "klantgesprek_analyse_schema",
+    "strict": true,
+    "schema": {
+      "type": "object",
+      "properties": {
+        "stap_1_klantprofiel": {
+          "type": "object",
+          "description": "Het geïdentificeerde primaire klantprofiel met onderbouwing gebaseerd op transcript bewijs",
+          "properties": {
+            "profiel": {
+              "type": "string",
+              "description": "Naam van het gekozen klantprofiel - moet direct afleidbaar zijn uit klantuitspraken",
+              "enum": [
+                "De Kostenbewuste Bespaarder",
+                "De Gemakszoeker",
+                "De Zekerheidszoeker",
+                "De Technologische Pionier",
+                "De Duurzame Idealist"
+              ]
+            },
+            "onderbouwing": {
+              "type": "string",
+              "description": "Beknopte toelichting die de profielkeuze rechtvaardigt met concrete verwijzing naar transcript",
+              "minLength": 10,
+              "maxLength": 200
+            }
+          },
+          "required": ["profiel", "onderbouwing"],
+          "additionalProperties": false
+        },
+        "stap_2_expliciete_ubrs": {
+          "type": "array",
+          "description": "Helder geformuleerde UBRs gebaseerd op directe klantuitspraken - alleen met zelfverklarende citaten",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ubr": {
+                "type": "string",
+                "description": "Eigen geformuleerde UBR die klantbehoefte het best samenvat - niet beperkt tot voorbeeldenlijst",
+                "minLength": 5,
+                "maxLength": 80
+              },
+              "onderbouwing_uit_transcript": {
+                "type": "string",
+                "description": "Format: '[tijdstip] Volledig zelfverklarend citaat dat de UBR bewijst.' VERBODEN: contextuele fragmenten zoals 'Ja, dat klopt' - moet op zichzelf de behoefte tonen",
+                "minLength": 20,
+                "maxLength": 400
+              }
+            },
+            "required": ["ubr", "onderbouwing_uit_transcript"],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 8
+        },
+        "stap_3_impliciete_ubrs": {
+          "type": "array",
+          "description": "Onderliggende motieven die logisch volgen uit transcript context - alleen met zelfverklarende onderbouwing",
+          "items": {
+            "type": "object",
+            "properties": {
+              "ubr": {
+                "type": "string",
+                "description": "Eigen geformuleerde impliciete UBR gebaseerd op transcript context - geen gissingen",
+                "minLength": 5,
+                "maxLength": 80
+              },
+              "onderbouwing_uit_transcript": {
+                "type": "string",
+                "description": "Format: '[tijdstip] Citaat dat het onderliggende motief duidelijk toont.' Moet zonder extra context de impliciete UBR bewijzen",
+                "minLength": 20,
+                "maxLength": 400
+              }
+            },
+            "required": ["ubr", "onderbouwing_uit_transcript"],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 5
+        },
+        "stap_4_aanbevolen_usps": {
+          "type": "array",
+          "description": "2-4 geselecteerde USPs uit vaste ENUM-lijst met zelfverklarende transcript-onderbouwing",
+          "items": {
+            "type": "object",
+            "properties": {
+              "key": {
+                "type": "string",
+                "description": "USP sleutel die EXACT moet overeenkomen met KEY uit ZONNEPLAN USP DATABASE - fatale fout bij verkeerde key",
+                "enum": [
+                  "USP_BATTERIJ_SLIMBESPAREN",
+                  "USP_BATTERIJ_COMPACT",
+                  "USP_BATTERIJ_NULGEDOE",
+                  "USP_BATTERIJ_ZONNESTROOM",
+                  "USP_BATTERIJ_TERUGLEVERKOSTEN",
+                  "USP_BATTERIJ_TOEKOMSTKLAAR",
+                  "USP_BATTERIJ_SLIMMEINVESTERING",
+                  "USP_BATTERIJ_EXTRAINKOMSTEN",
+                  "USP_BATTERIJ_SLIMSTEAANSTURING",
+                  "USP_BATTERIJ_LANGETERMIJN",
+                  "USP_BATTERIJ_KRACHTIGLAADVERMOGEN",
+                  "USP_BATTERIJ_MEERRENDEMENT",
+                  "USP_BATTERIJ_INZICHTAPP",
+                  "USP_BATTERIJ_NOODSTROOM",
+                  "USP_BATTERIJ_DESIGN",
+                  "USP_VEILIGHEID_LIFEPO4",
+                  "USP_VEILIGHEID_BRANDVEILIG",
+                  "USP_SERVICE_TOPSERVICE",
+                  "USP_SERVICE_ACHTERAFBETALEN",
+                  "USP_SERVICE_BTWTERUGGAVE"
+                ]
+              },
+              "redenering": {
+                "type": "string",
+                "description": "Korte redenering die USP koppelt aan geformuleerde UBR - max 15 woorden, geen vaagheden",
+                "minLength": 10,
+                "maxLength": 100
+              },
+              "onderbouwing_uit_transcript": {
+                "type": "string",
+                "description": "Format: '[tijdstip] Volledig citaat dat de behoefte toont waarop deze USP antwoord geeft.' VERBODEN: nietszeggende fragmenten - moet zelfverklarend zijn",
+                "minLength": 20,
+                "maxLength": 400
+              }
+            },
+            "required": ["key", "redenering", "onderbouwing_uit_transcript"],
+            "additionalProperties": false
+          },
+          "minItems": 2,
+          "maxItems": 4
+        }
+      },
+      "required": ["stap_1_klantprofiel", "stap_2_expliciete_ubrs", "stap_3_impliciete_ubrs", "stap_4_aanbevolen_usps"],
+      "additionalProperties": false
+    }
+  }

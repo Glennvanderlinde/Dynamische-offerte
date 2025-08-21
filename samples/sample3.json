@@ -1,0 +1,48 @@
+{
+    "stap_1_klantprofiel": {
+      "onderbouwing": "De klant focust op het optimaliseren van eigen zonnestroom en het benutten van dynamische contracten om financieel voordeel te behalen.",
+      "profiel": "De Kostenbewuste Bespaarder"
+    },
+    "stap_2_expliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[4:23 - 4:33] En dat is natuurlijk ook een extra reden om een batterij te zoeken. In staat is om in elk geval de productie van de dag ook een eindje in de avond mee te nemen.",
+        "ubr": "Eigen zonnestroom ook in de avonduren kunnen gebruiken"
+      },
+      {
+        "onderbouwing_uit_transcript": "[4:38 - 4:50] Nee hoor, ook voor een dynamisch contract. Ja, precies. in te kunnen laden als het goedkoop is en te verkopen als het duur is.",
+        "ubr": "Financieel voordeel behalen met een dynamisch energiecontract"
+      },
+      {
+        "onderbouwing_uit_transcript": "[0:59 - 1:17] Nee, wat voor soort thuisbatterij, wat is het beste voor onze situatie? Dat is waar we naar zoeken. En omdat er nogal veel verschillende aanbiedingen zijn, denken we, we moeten eens even kijken.",
+        "ubr": "De beste thuisbatterijoplossing vinden voor een complexe situatie"
+      }
+    ],
+    "stap_3_impliciete_ubrs": [
+      {
+        "onderbouwing_uit_transcript": "[2:51 - 3:09] Het afgelopen jaar hebben wij 30.000 ingeladen. En we hebben 17,7 duizend zelf geproduceerd met panelen.",
+        "ubr": "Behoefte aan maximale efficiëntie en benutting van hoge energieproductie en -verbruik"
+      }
+    ],
+    "stap_4_aanbevolen_usps": [
+      {
+        "key": "USP_BATTERIJ_ZONNESTROOM",
+        "onderbouwing_uit_transcript": "[4:23 - 4:33] En dat is natuurlijk ook een extra reden om een batterij te zoeken. In staat is om in elk geval de productie van de dag ook een eindje in de avond mee te nemen.",
+        "redenering": "Direct antwoord op de wens om eigen zonnestroom later te benutten."
+      },
+      {
+        "key": "USP_BATTERIJ_SLIMBESPAREN",
+        "onderbouwing_uit_transcript": "[4:38 - 4:50] Nee hoor, ook voor een dynamisch contract. Ja, precies. in te kunnen laden als het goedkoop is en te verkopen als het duur is.",
+        "redenering": "Perfecte match voor het optimaliseren met een dynamisch energiecontract."
+      },
+      {
+        "key": "USP_BATTERIJ_SLIMSTEAANSTURING",
+        "onderbouwing_uit_transcript": "[4:38 - 4:50] Nee hoor, ook voor een dynamisch contract. Ja, precies. in te kunnen laden als het goedkoop is en te verkopen als het duur is.",
+        "redenering": "Benadrukt de geavanceerde optimalisatie voor maximaal rendement."
+      },
+      {
+        "key": "USP_BATTERIJ_TOEKOMSTKLAAR",
+        "onderbouwing_uit_transcript": "[4:38 - 4:50] Nee hoor, ook voor een dynamisch contract. Ja, precies. in te kunnen laden als het goedkoop is en te verkopen als het duur is.",
+        "redenering": "Sluit aan bij de impliciete wens om voorbereid te zijn op toekomstige energiemarkten."
+      }
+    ]
+  }

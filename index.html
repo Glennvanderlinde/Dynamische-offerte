@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dynamische Offerte Renderer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="zp-header">
+      <div class="zp-container">
+        <h1>Dynamische Offerte</h1>
+        <p class="subtitle">Kies een dataset of upload JSON om te vergelijken</p>
+        <div class="control-bar">
+          <label for="dataset-select">Dataset</label>
+          <select id="dataset-select">
+            <option value="Structured_output.json">Root: Structured_output.json</option>
+            <option value="samples/sample1.json">Sample 1</option>
+            <option value="samples/sample2.json">Sample 2</option>
+            <option value="samples/sample3.json">Sample 3</option>
+          </select>
+          <div class="upload">
+            <label for="upload-json" class="btn">Upload JSON(s)</label>
+            <input id="upload-json" type="file" accept="application/json" multiple />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="zp-container">
+      <section id="intro">
+        <h2>Klantprofiel</h2>
+        <div id="klantprofiel"></div>
+      </section>
+
+      <section id="usps">
+        <h2>Aanbevolen USP's</h2>
+        <div id="usp-container" class="usp-grid"></div>
+      </section>
+
+      <section id="ubrs-explicit">
+        <h2>Expliciete UBR's</h2>
+        <div id="ubrs-explicit-container" class="ubr-list"></div>
+      </section>
+
+      <section id="ubrs-implicit">
+        <h2>Impliciete UBR's</h2>
+        <div id="ubrs-implicit-container" class="ubr-list"></div>
+      </section>
+    </main>
+
+    <script src="./renderer.js" defer></script>
+  </body>
+</html>
+
+

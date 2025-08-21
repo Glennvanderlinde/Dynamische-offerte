@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Advies – Offerte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="theme-offer">
+    <div class="offer-layout">
+      <aside class="offer-sidebar">
+        <div class="logo">zonneplan</div>
+        <ol class="steps">
+          <li class="done">Welkom</li>
+          <li class="active">Advies</li>
+          <li>Besparing</li>
+          <li>Garantie</li>
+          <li>Slim systeem</li>
+          <li>Uw aanbod</li>
+        </ol>
+        <div class="contact">
+          <img class="avatar" src="./nathan.png" alt="Nathan Eikelboom" />
+          <div class="name">Nathan Eikelboom</div>
+          <div class="phone">088 020 3002</div>
+        </div>
+      </aside>
+      <main class="offer-main">
+        <header class="offer-header">
+          <div class="meta-bar">
+            <div class="stars" aria-label="Rating">★★★★★</div>
+            <span class="rating-badge">9.4</span>
+            <span class="reviews">207 beoordelingen in Zandeweer</span>
+            <span class="address">Veilingweg 6, Zandeweer</span>
+          </div>
+          <div class="header-row">
+            <h1>Het advies voor uw situatie</h1>
+            <div class="control-bar small">
+              <label for="dataset-select">Dataset</label>
+              <select id="dataset-select">
+                <option value="Structured_output.json">Root: Structured_output.json</option>
+                <option value="samples/sample1.json">Sample 1</option>
+                <option value="samples/sample2.json">Sample 2</option>
+                <option value="samples/sample3.json">Sample 3</option>
+              </select>
+              <div class="upload">
+                <label for="upload-json" class="btn">Upload JSON</label>
+                <input id="upload-json" type="file" accept="application/json" />
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="offer-body">
+          <div class="offer-visual">
+            <img src="./roof.jpg" alt="Uw dak" />
+            <div class="thumbs">
+              <img src="./roof.jpg" alt="Dak thumbnail" />
+              <img src="./batterij.png" alt="Nexus batterij" />
+            </div>
+          </div>
+          <div class="offer-card card">
+            <h2 class="product-title">Nexus 20 kWh thuisbatterij</h2>
+            <ul id="spec-list" class="offer-usp-list spec-list">
+              <li>Hoge opslagcapaciteit van 20 kWh</li>
+              <li>Veilige en duurzame LFP-technologie</li>
+              <li>Krachtige 10 kW laad- en ontlaadcapaciteit</li>
+              <li>Zeer hoge systeemefficiëntie (97,5%)</li>
+              <li>Compact en stijlvol design</li>
+            </ul>
+          </div>
+          <section class="usp-card card">
+            <h3>Uw belangrijkste voordelen</h3>
+            <div id="usp-details" class="usp-details"></div>
+          </section>
+        </section>
+
+        <footer class="offer-footer">
+          <button class="btn-outline">Vorige</button>
+          <button class="btn-primary">Volgende →</button>
+        </footer>
+      </main>
+    </div>
+    <script src="./renderer.js" defer></script>
+  </body>
+  </html>
+
+
